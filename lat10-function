@@ -1,0 +1,53 @@
+<?php
+//Function define by user
+//function tanpa parameter/argumen ()
+function salam(){
+echo "Assalamualaikum apa kabar semua..."; //isinya
+}
+salam(); //cetak function
+echo "<hr>";
+//function beserta parameter/argumen (...)
+function sapa($kawan){
+echo "Hallo apa kabar $kawan";
+}
+sapa('Wahyu');
+echo "<br>";
+sapa('Budi');
+echo "<br>";
+$nama='Edi';
+sapa($nama);
+echo "<hr>";
+function kabar($teman='Tono',$teman2='Tini'){
+echo "Apa kabar $teman dan $teman2";
+}
+kabar();
+echo "<br>";
+kabar('Ahmad');
+echo "<hr>";
+//function aritmatika dengan void(tidak mengembalikan nilai)
+function hitung($x,$y){
+$z=$x+$y;
+echo $z;
+}
+hitung(20,50); //cetak angkanya bebas. 20+50=70
+echo "<hr>";
+//function aritmatika dengan return(mengembalikan nilai)
+//return: nilai yang dikembalikan dari proses2 yang terjadi pada fungsi tersebut
+function tambah($a,$b){
+$c=$a+$b;
+return $c;
+}
+echo tambah(50,40);
+echo "<br>";
+$i=10;
+$j=30;
+echo tambah($i,$j);
+echo "<hr>";
+//buat fungsi hitung umur
+function hitung_umur($thn_lahir) {
+$thn_sekarang = 2024;
+$umur = $thn_sekarang - $thn_lahir;
+return $umur;
+}
+echo hitung_umur(2001); //isi yang diubah
+?>
